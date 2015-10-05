@@ -1,0 +1,11 @@
+#bash
+echo "----"
+pushd `dirname $0` > /dev/null
+SCRIPTPATH=`pwd -P`
+popd > /dev/null
+echo $SCRIPTPATH
+
+
+
+
+$SCRIPTPATH/hln -u $SCRIPTPATH/../../second-project/Assets/SharedFolder

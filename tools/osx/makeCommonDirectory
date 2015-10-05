@@ -1,0 +1,8 @@
+#bash
+echo "----"
+pushd `dirname $0` > /dev/null
+SCRIPTPATH=`pwd -P`
+popd > /dev/null
+echo $SCRIPTPATH
+
+$SCRIPTPATH/hln  $SCRIPTPATH/../../first-project/Assets/SharedFolder $SCRIPTPATH//../../second-project/Assets/SharedFolder
